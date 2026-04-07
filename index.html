@@ -53,184 +53,26 @@ header h1 {
   opacity: 1;
 }
 
-/* 商品説明 */
-<section class="container" style="margin-top:40px;">
-
-  <h2 style="text-align:center; color:#ffcc00;">
-    ダイエットプランとは？
-  </h2>
-
-  <p style="text-align:center; font-size:15px;">
-    完全マンツーマン指導で、最短で理想の身体へ導く本格プログラム。<br>
-    トレーニングだけでなく、食事・生活習慣まで徹底サポートします。
-  </p>
-
-</section>
-
-<!-- メリット -->
-<section class="container" style="margin-top:30px;">
-
-  <h2 style="text-align:center; color:#ffcc00;">
-    このプランの強み
-  </h2>
-
-  <div style="margin-top:20px;">
-
-    <div style="background:#000; padding:15px; border-radius:10px; margin-bottom:15px;">
-      <h3>① 完全マンツーマン指導</h3>
-      <p>あなた専用のトレーニングで、初心者でも安心して結果が出せる。</p>
-    </div>
-
-    <div style="background:#000; padding:15px; border-radius:10px; margin-bottom:15px;">
-      <h3>② 食事サポート付き</h3>
-      <p>無理な制限なし。続けられる食事管理でリバウンドを防止。</p>
-    </div>
-
-    <div style="background:#000; padding:15px; border-radius:10px; margin-bottom:15px;">
-      <h3>③ 最短で結果を出す設計</h3>
-      <p>週2回＋習慣改善で、効率よく脂肪を落とし理想の身体へ。</p>
-    </div>
-
-    <div style="background:#000; padding:15px; border-radius:10px;">
-      <h3>④ 継続しやすい環境</h3>
-      <p>一人では続かない人でも、サポート付きで習慣化できる。</p>
-    </div>
-
-  </div>
-
-</section>
-
-
-
-  
-/* ===== CTAエリア ===== */
-.cta-character {
+/* セクション */
+.section {
+  margin-top: 40px;
   text-align: center;
-  padding: 40px 15px;
 }
 
-/* 画像修正 ←これが重要 */
-.cta-character img {
-  width: 100%;
-  max-width: 320px;
-  height: auto;
-  border-radius: 12px;
-  margin-bottom: 15px;
-}
-
-/* 残り人数 */
-.limit {
-  color: #ff4444;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-/* ボタン */
-.cta-btn {
-  display: inline-block;
-  background: #06C755;
-  color: #fff;
-  padding: 14px 26px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-  transition: 0.2s;
-}
-
-.cta-btn:hover {
-  transform: scale(1.05);
-}
-
-/* フッター */
-footer {
-  background: #000;
-  text-align: center;
-  padding: 20px;
-}
-
-/* 固定LINE */
-.line-fixed {
-  position: fixed;
-  bottom: 20px;
-  right: 15px;
-  background: #06C755;
-  color: #fff;
-  padding: 14px 18px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-size: 14px;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-  <div class="container header-inner">
-    <h1>🔥 APRICOT GYM 🔥</h1>
-    <a href="https://www.instagram.com/apricotgym2026">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="insta-header">
-    </a>
-  </div>
-</header>
-
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>apricot gym</title>
-
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-  line-height: 1.6;
-  background: linear-gradient(#111, #ffcc00);
-  color: #fff;
-}
-
-/* 共通幅 */
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 0 15px;
-}
-
-/* ヘッダー */
-header {
-  background: #000;
+.section h2 {
   color: #ffcc00;
 }
 
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 0;
+/* メリットカード */
+.card {
+  background: #000;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  text-align: left;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 20px;
-}
-
-/* Instagram */
-.insta-header {
-  width: 22px;
-  opacity: 0.8;
-  transition: 0.2s;
-}
-.insta-header:hover {
-  opacity: 1;
-}
-
-/* CTAエリア */
+/* CTA */
 .cta-character {
   text-align: center;
   padding: 40px 15px;
@@ -239,19 +81,16 @@ header h1 {
 .cta-character img {
   width: 100%;
   max-width: 320px;
-  height: auto;
   border-radius: 12px;
   margin-bottom: 15px;
 }
 
-/* 残り人数 */
 .limit {
   color: #ff4444;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-/* ボタン */
 .cta-btn {
   display: inline-block;
   background: #06C755;
@@ -302,55 +141,43 @@ footer {
 </header>
 
 <!-- 商品説明 -->
-<section class="container" style="margin-top:40px;">
-
-  <h2 style="text-align:center; color:#ffcc00;">
-    ダイエットプランとは？
-  </h2>
-
-  <p style="text-align:center; font-size:15px;">
+<section class="container section">
+  <h2>ダイエットプランとは？</h2>
+  <p>
     完全マンツーマン指導で、最短で理想の身体へ導く本格プログラム。<br>
     トレーニングだけでなく、食事・生活習慣まで徹底サポートします。
   </p>
-
 </section>
 
 <!-- メリット -->
-<section class="container" style="margin-top:30px;">
+<section class="container section">
+  <h2>このプランの強み</h2>
 
-  <h2 style="text-align:center; color:#ffcc00;">
-    このプランの強み
-  </h2>
+  <div class="card">
+    <h3>① 完全マンツーマン指導</h3>
+    <p>あなた専用のトレーニングで、初心者でも安心して結果が出せる。</p>
+  </div>
 
-  <div style="margin-top:20px;">
+  <div class="card">
+    <h3>② 食事サポート付き</h3>
+    <p>無理な制限なし。続けられる食事管理でリバウンドを防止。</p>
+  </div>
 
-    <div style="background:#000; padding:15px; border-radius:10px; margin-bottom:15px;">
-      <h3>① 完全マンツーマン指導</h3>
-      <p>あなた専用のトレーニングで、初心者でも安心して結果が出せる。</p>
-    </div>
+  <div class="card">
+    <h3>③ 最短で結果を出す設計</h3>
+    <p>週2回＋習慣改善で、効率よく脂肪を落とし理想の身体へ。</p>
+  </div>
 
-    <div style="background:#000; padding:15px; border-radius:10px; margin-bottom:15px;">
-      <h3>② 食事サポート付き</h3>
-      <p>無理な制限なし。続けられる食事管理でリバウンドを防止。</p>
-    </div>
-
-    <div style="background:#000; padding:15px; border-radius:10px; margin-bottom:15px;">
-      <h3>③ 最短で結果を出す設計</h3>
-      <p>週2回＋習慣改善で、効率よく脂肪を落とし理想の身体へ。</p>
-    </div>
-
-    <div style="background:#000; padding:15px; border-radius:10px;">
-      <h3>④ 継続しやすい環境</h3>
-      <p>一人では続かない人でも、サポート付きで習慣化できる。</p>
-    </div>
-
+  <div class="card">
+    <h3>④ 継続しやすい環境</h3>
+    <p>一人では続かない人でも、サポート付きで習慣化できる。</p>
   </div>
 
 </section>
 
 <!-- CTA -->
 <section class="cta-character">
-  <img src="beforeafter2.jpg" alt="フィジークキャラクター">
+  <img src="beforeafter2.jpg" alt="ビフォーアフター">
 
   <p class="limit">
     【残り3名】今月の新規受付はあとわずかです
@@ -360,15 +187,6 @@ footer {
     LINEで無料相談する
   </a>
 </section>
-
-<footer>
-  <p>© apricot gym</p>
-</footer>
-
-<a href="https://lin.ee/xUmAtVC" class="line-fixed">LINE予約</a>
-
-</body>
-</html>
 
 <footer>
   <p>© apricot gym</p>
