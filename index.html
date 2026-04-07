@@ -13,98 +13,103 @@
 body {
   margin: 0;
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-  line-height: 1.6;
-  background: linear-gradient(#111, #ffcc00);
+  line-height: 1.8;
+  background: #111;
   color: #fff;
 }
 
-/* 共通幅 */
+/* 共通 */
 .container {
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
-  padding: 0 15px;
+  padding: 20px;
 }
 
 /* ヘッダー */
 header {
   background: #000;
-  color: #ffcc00;
 }
 
 .header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 0;
 }
 
 header h1 {
-  margin: 0;
+  color: #ffcc00;
   font-size: 20px;
 }
 
 /* Instagram */
 .insta-header {
-  width: 22px;
-  opacity: 0.8;
-  transition: 0.2s;
-}
-.insta-header:hover {
-  opacity: 1;
+  width: 26px;
 }
 
 /* セクション */
 .section {
-  margin-top: 40px;
+  margin: 50px 0;
   text-align: center;
 }
 
 .section h2 {
   color: #ffcc00;
+  margin-bottom: 20px;
 }
 
-/* メリットカード */
+/* 画像 */
+.main-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* 動画 */
+video {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* カード */
 .card {
   background: #000;
-  padding: 15px;
-  border-radius: 10px;
+  padding: 20px;
+  border-radius: 12px;
   margin-bottom: 15px;
   text-align: left;
 }
 
 /* CTA */
-.cta-character {
+.cta {
+  background: linear-gradient(#000, #222);
   text-align: center;
-  padding: 40px 15px;
+  padding: 50px 20px;
 }
 
-.cta-character img {
+.cta img {
   width: 100%;
-  max-width: 320px;
+  max-width: 300px;
   border-radius: 12px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .limit {
   color: #ff4444;
+  font-size: 18px;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .cta-btn {
   display: inline-block;
   background: #06C755;
   color: #fff;
-  padding: 14px 26px;
+  padding: 16px 30px;
   border-radius: 50px;
-  text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
-  transition: 0.2s;
-}
-
-.cta-btn:hover {
-  transform: scale(1.05);
+  text-decoration: none;
 }
 
 /* フッター */
@@ -118,13 +123,13 @@ footer {
 .line-fixed {
   position: fixed;
   bottom: 20px;
-  right: 15px;
+  right: 20px;
   background: #06C755;
   color: #fff;
-  padding: 14px 18px;
+  padding: 16px 22px;
   border-radius: 50px;
   text-decoration: none;
-  font-size: 14px;
+  font-weight: bold;
 }
 </style>
 </head>
@@ -140,22 +145,40 @@ footer {
   </div>
 </header>
 
-<!-- 商品説明 -->
+<!-- 動画 -->
 <section class="container section">
-  <img src="diet.mp4" alt="ムービー"> 
-  <img src="gymgirl2.jpg" alt="トレ女">
-  <h2>ダイエットプランとは？</h2>
-  <img src="ryoukin.jpg" alt="トレ女">
+  <video src="diet.mp4" autoplay muted loop playsinline></video>
 </section>
 
-<!-- メリット -->
+<!-- コンセプト -->
 <section class="container section">
-  <img src="tuyomi.jpg" alt="トレ女">
+  <h2>ダイエットプランとは？</h2>
+  <img src="gymgirl2.jpg" class="main-img">
+  <img src="ryoukin.jpg" class="main-img">
+</section>
+
+<!-- 強み -->
+<section class="container section">
+  <h2>このプランの強み</h2>
+
+  <div class="card">
+    完全マンツーマン指導で初心者でも安心
+  </div>
+
+  <div class="card">
+    食事サポート付きでリバウンド防止
+  </div>
+
+  <div class="card">
+    最短で結果を出す設計
+  </div>
+
+  <img src="tuyomi.jpg" class="main-img">
 </section>
 
 <!-- CTA -->
-<section class="cta-character">
-  <img src="beforeafter2.jpg" alt="ビフォーアフター">
+<section class="cta">
+  <img src="beforeafter2.jpg">
 
   <p class="limit">
     【残り3名】今月の新規受付はあとわずかです
@@ -170,7 +193,9 @@ footer {
   <p>© APRICOT GYM</p>
 </footer>
 
-<a href="https://lin.ee/xUmAtVC" class="line-fixed">LINE予約</a>
+<a href="https://lin.ee/xUmAtVC" class="line-fixed">
+  LINE予約
+</a>
 
 </body>
 </html>
